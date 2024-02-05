@@ -1,7 +1,7 @@
 import { model, Schema, Document, Types } from "mongoose";
-import { IUser, Role } from "@interfaces/user.interface";
+import { IPost, Role } from "@interfaces/post.interface";
 
-export type UserDocument = IUser & Document;
+export type PostDocument = IPost & Document;
 
 const commentSchema = new Schema({
   user: {
@@ -11,7 +11,7 @@ const commentSchema = new Schema({
   message: String,
 });
 
-const userSchema: Schema = new Schema(
+const postSchema: Schema = new Schema(
   {
     user: {
       type: String,
@@ -31,6 +31,6 @@ const userSchema: Schema = new Schema(
   }
 );
 
-const userModel = model<UserDocument>("User", userSchema);
+const postModel = model<PostDocument>("Post", postSchema);
 
-export default userModel;
+export default postModel;
