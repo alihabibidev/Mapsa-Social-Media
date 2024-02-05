@@ -1,5 +1,5 @@
 import { model, Schema, Document, Types } from "mongoose";
-import { IPost, Role } from "@interfaces/post.interface";
+import { IPost } from "@interfaces/post.interface";
 
 export type PostDocument = IPost & Document;
 

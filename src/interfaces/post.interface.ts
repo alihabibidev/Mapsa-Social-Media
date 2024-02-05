@@ -7,5 +7,4 @@ export interface IPost {
   birthDate?: Date;
   verifiedEmail: boolean;
   active: boolean;
-  role: Role;
 }

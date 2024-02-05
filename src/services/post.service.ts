@@ -1,9 +1,9 @@
-import User, { UserDocument } from "@models/user.model";
-import  from "@models/pos";
+import { IPost } from "@/interfaces/post.interface";
+import Post from "@models/post.model";
 import { Model } from "mongoose";
 
 class PostService {
-  private readonly PostModel: Model<UserDocument> = Post;
+  // private readonly PostModel: Model<UserDocument> = Post;
 
 
 }
