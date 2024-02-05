@@ -1,8 +1,4 @@
-export enum Role {
-  User = "USER",
-  Staff = "STAFF",
-  Superuser = "SUPERUSER",
-}
+
 
 export interface IPost {
   email: string;
